@@ -2,9 +2,7 @@ package com.futuremind.liverelay
 
 import android.arch.lifecycle.LifecycleOwner
 import com.jakewharton.rxrelay2.BehaviorRelay
-import com.trello.rxlifecycle2.android.lifecycle.kotlin.bindToLifecycle
-import io.reactivex.BackpressureStrategy.LATEST
-import io.reactivex.Flowable
+import com.jakewharton.rxrelay2.Relay
 
 /**
  * LiveRelay can be used to process states between ViewModel and LifecycleOwner.
@@ -12,13 +10,15 @@ import io.reactivex.Flowable
  * Subscribers don't need to worry about unexpected onComplete or onError, it only passes onNext events.
  * Also, once observe is passed a valid [LifecycleOwner], subscribers don't need to worry about unsubscribing.
  */
-class LiveRelay<T> {
+@Deprecated(
+        message = "Replace with LiveStateRelay (which is now introduce to distinguish from LiveEventRelay)",
+        replaceWith = ReplaceWith(
+                "LiveStateRelay",
+                "com.futuremind.liverelay.LiveStateRelay"
+        )
+)
+class LiveRelay<T> : BaseLiveRelay<T>() {
 
-    private val relay = BehaviorRelay.create<T>().toSerialized()
-
-    fun observe(lifecycleOwner: LifecycleOwner): Flowable<T> =
-            relay.bindToLifecycle(lifecycleOwner).toFlowable(LATEST)
-
-    fun nextState(state: T) = relay.accept(state)
+    override val relay: Relay<T> = BehaviorRelay.create<T>().toSerialized()
 
 }
