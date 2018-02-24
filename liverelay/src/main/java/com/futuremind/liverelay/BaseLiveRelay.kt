@@ -18,7 +18,7 @@ abstract class BaseLiveRelay<T> {
 
     @Deprecated(
             message = "Use onNext instead",
-            replaceWith = ReplaceWith("onNext(next)")
+            replaceWith = ReplaceWith("onNext(state)")
     )
     fun nextState(state: T) = onNext(state)
 
