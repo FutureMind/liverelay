@@ -1,6 +1,5 @@
 package com.futuremind.liverelay
 
-import android.arch.lifecycle.LifecycleOwner
 import com.jakewharton.rxrelay2.PublishRelay
 import com.jakewharton.rxrelay2.Relay
 
