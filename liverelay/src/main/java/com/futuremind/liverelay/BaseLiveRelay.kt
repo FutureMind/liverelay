@@ -1,8 +1,8 @@
 package com.futuremind.liverelay
 
-import android.arch.lifecycle.LifecycleOwner
+import androidx.lifecycle.LifecycleOwner
 import com.jakewharton.rxrelay2.Relay
-import com.trello.rxlifecycle2.android.lifecycle.kotlin.bindToLifecycle
+import com.trello.rxlifecycle3.android.lifecycle.kotlin.bindToLifecycle
 import io.reactivex.BackpressureStrategy.LATEST
 import io.reactivex.Flowable
 

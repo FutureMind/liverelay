@@ -1,8 +1,8 @@
 package com.futuremind.liverelay
 
-import android.arch.lifecycle.Lifecycle.Event
-import android.arch.lifecycle.LifecycleOwner
-import android.arch.lifecycle.LifecycleRegistry
+import androidx.lifecycle.Lifecycle.Event
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.LifecycleRegistry
 
 
 class MockLifecycleOwner : LifecycleOwner {
