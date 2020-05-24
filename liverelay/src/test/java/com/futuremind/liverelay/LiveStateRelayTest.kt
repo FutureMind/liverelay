@@ -1,15 +1,14 @@
 package com.futuremind.liverelay
 
-import androidx.lifecycle.Lifecycle.Event.ON_CREATE
-import androidx.lifecycle.Lifecycle.Event.ON_DESTROY
-import androidx.lifecycle.Lifecycle.Event.ON_PAUSE
-import androidx.lifecycle.Lifecycle.Event.ON_RESUME
-import androidx.lifecycle.Lifecycle.Event.ON_START
-import androidx.lifecycle.Lifecycle.Event.ON_STOP
+import androidx.lifecycle.Lifecycle.Event.*
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
 
 class LiveStateRelayTest {
+
+    @get:Rule
+    val schedulersRule = SchedulersRule()
 
     private val lifecycleOwner = MockLifecycleOwner()
     private lateinit var relay: LiveStateRelay<Unit>
