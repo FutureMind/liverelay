@@ -1,8 +1,8 @@
 package com.futuremind.liverelay
 
 import androidx.lifecycle.LifecycleOwner
-import com.jakewharton.rxrelay2.BehaviorRelay
-import com.jakewharton.rxrelay2.Relay
+import com.jakewharton.rxrelay3.BehaviorRelay
+import com.jakewharton.rxrelay3.Relay
 
 /**
  * LiveRelay can be used to process states between ViewModel and LifecycleOwner.

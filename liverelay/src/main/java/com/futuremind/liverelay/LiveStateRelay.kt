@@ -1,7 +1,7 @@
 package com.futuremind.liverelay
 
-import com.jakewharton.rxrelay2.BehaviorRelay
-import com.jakewharton.rxrelay2.Relay
+import com.jakewharton.rxrelay3.BehaviorRelay
+import com.jakewharton.rxrelay3.Relay
 
 /**
  * [LiveStateRelay] can be used in MVVM for the View to observe states coming from ViewModel.
