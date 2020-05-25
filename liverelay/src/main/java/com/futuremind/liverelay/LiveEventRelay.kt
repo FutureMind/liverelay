@@ -1,7 +1,7 @@
 package com.futuremind.liverelay
 
-import com.jakewharton.rxrelay2.PublishRelay
-import com.jakewharton.rxrelay2.Relay
+import com.jakewharton.rxrelay3.PublishRelay
+import com.jakewharton.rxrelay3.Relay
 
 /**
  * [LiveEventRelay] can be used in MVVM for the View to observe events coming from ViewModel.
