@@ -8,7 +8,7 @@ TBD
 ## Installation
 
 ```gradle
-implementation 'com.github.futuremind:liverelay:3.0.0'
+implementation 'com.github.FutureMind:liverelay:3.0.0'
 ```
 
 ## License
