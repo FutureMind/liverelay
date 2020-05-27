@@ -1,5 +1,5 @@
 # LiveRelay
-
+[![](https://jitpack.io/v/FutureMind/liverelay.svg)](https://jitpack.io/#FutureMind/liverelay)
 
 ## Usage
 
